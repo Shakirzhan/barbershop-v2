@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a href="#">Информация</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Новости</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Магазин</a>
+            </li>
+            <li class="main-menu__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__entrance">
+          <a class="page-header__entrance-link" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="main-logo">
+        <img src="image/BORODINSKI_Logo.png" alt="BORODINSKI_Logo">
+      </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <div class="advantages__item">
+            <b class="advantages__caps">Быстро</b>
+            <p class="advantages__desc">Мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+          </div>
+          <div class="advantages__item">
+            <b class="advantages__caps">Круто</b>
+            <p class="advantages__desc">Забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
+          </div>
+          <div class="advantages__item">
+            <b class="advantages__caps">Дорого</b>
+            <p class="advantages__desc">Наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?</p>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info__wrapper">
+          <div class="info__list">
+            <div class="info__item">
+              <h2 class="info__caption">Новости</h2>
+              <div class="news__list">
+                <div class="news__item">
+                  <b class="news__caps">Нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</b>
+                  <span class="news__date">25 сентября</span>
+                </div>
+                <div class="news__item">
+                  <b class="news__caps">В нашей команде пополнение, борис «бритва» стригунец, обладетель множества титулов и наград пополнил наши стройные ряды</b>
+                  <span class="news__date">19 сентября</span>
+                </div>
+                <button class="btn news__btn">Все новости</button>
+              </div>
+            </div>
+            <div class="info__item">
+              <h2 class="info__caption">Фотогалерея</h2>
+              <div class="photo-gallery__list">
+                <div class="photo-gallery__item">
+                  <img src="image/photo-gallery/photo-1.png" alt="photo-1">
+                </div>
+              </div>
+              <div class="photo-gallery__wrap">
+                <a class="photo-gallery__btn photo-gallery__prev" href="#">Назад</a>
+                <a class="photo-gallery__btn photo-gallery__next" href="#">Вперед</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <h2 class="contacts__caption">Контактная информация</h2>
+              <div class="contacts__content">
+                <p>Барбершоп «бородинский»</p>
+                <p>Адрес: г. санкт-петербург, б. конюшенная, д. 19/8</p>
+                <p>Телефон: +7 (495) 666-02-66</p>
+              </div>
+              <div class="contacts__content">
+                <p>Время работы:</p> 
+                <p>пн — пт: с 10:00 до 22:00</p>
+                <p>сб — вс: с 10:00 до 19:00</p>
+              </div>
+              <button class="contacts__btn btn">Как проехать</button>
+              <button class="contacts__btn btn">Обратная связь</button>
+            </div>
+            <div class="contacts__item">
+              <h2 class="contacts__caption">Записаться</h2>
+              <div class="contacts__content">
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+              </div>
+              <form action="#" class="form">
+                <div class="contacts__wrap">
+                  <input type="text" name="date" id="date" placeholder="Дата">
+                  <input type="text" name="time" id="time" placeholder="Время">
+                  <input type="text" name="name" id="name" placeholder="Ваше имя">
+                  <input type="text" name="phone" id="phone" placeholder="Телефон">
+                  <input type="submit" value="Отправить" class="contacts__btn form__btn">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__wrap">
+          <div class="page-footer__contacts">
+            <p>Барбершоп «бородинский»</p>
+            <p>Адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8</p>
+            <p>Как нас найти?</p>
+            <p>Телефон: +7 (495) 666-02-66</p>
+          </div>
+          <div class="page-footer__social">
+            <p>Давайте дружить!</p>
+            <div class="page-footer__list">
+              <div class="page-footer__item"></div>
+              <div class="page-footer__item"></div>
+              <div class="page-footer__item"></div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__developed">
+          <p>Разработано:</p>
+          <a href="#" class="page-footer__developed-button btn">htmlacademy.ru</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+@font-face
+  font-family: "PT Sans Narrow"
+  src: url("../fonts/PT_Sans-Narrow-Web-Regular.ttf") format("truetype")
+  font-style: normal
+  
+body 
+  margin: 0
+  color: #ffffff
+  background-color: #070707
+  font-family: 'PT Sans Narrow', sans-serif;
+  min-width: 1000px
+  height: 100vh
+  background-color: #070707
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -3px
+    right: 0
+    bottom: 0
+    z-index: -1
+    min-width: 1000px
+    background-image: url(../image/tint.png)
+    background-size: cover
+    background-repeat: no-repeat
+
+* 
+  box-sizing: border-box
+
+.container 
+  padding: 0 10px
+  width: 960px
+  margin: 0 auto
+
+.btn 
+  width: 140px
+  padding: 14px 0 
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 400
+  color: #ffffff
+  background-color: #000000
+  border: none
+  text-align: center
+  &:hover
+    cursor: pointer
+    background-color: #663d15
+
+.text-prop
+  margin: 0
+  font-size: 14px
+  line-height: 24px
+  font-weight: 400
+  text-transform: uppercase
+
+.page-header
+  background-color: #000000
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    @extend .container
+  &__entrance
+    &-link
+      position: relative
+      display: block
+      padding: 29px 0
+      padding-right: 20px
+      padding-left: 53px
+      text-transform: uppercase
+      font-size: 16px
+      text-decoration: none
+      color: #ffffff
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 22px
+        width: 18px
+        height: 16px
+        margin-top: -8px
+        background-image: url(../image/page-header/icon-login.png)
+        background-repeat: no-repeat
+        opacity: 0.3
+      &:hover
+        background-color: #242424
+        &::before
+          opacity: 1
+.main-menu
+  &__list
+    margin: 0
+    padding: 0
+    list-style: none
+  &__item
+    display: inline-block
+    a 
+      display: block
+      padding: 29px 22px
+      text-transform: uppercase
+      font-size: 16px
+      text-decoration: none
+      color: #ffffff
+      &:hover 
+        background-color: #242424
+.main-logo 
+  margin-top: 57px
+  text-align: center
+.advantages
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @extend .container
+  &__item
+    width: 300px
+    text-align: center
+  &__caps
+    position: relative
+    display: block
+    margin-bottom: 85px
+    text-transform: uppercase
+    font-size: 30px;
+    font-weight: 600;
+    &::before
+      content: ''
+      position: absolute
+      top: 65px
+      left: 50%
+      width: 20px
+      height: 20px
+      margin-left: -10px;
+      transform: rotate(45deg);
+      background-color: #fff
+  &__desc
+    margin: 0 7px
+    text-transform: uppercase
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+.info
+  margin-top: 84px
+  color: #000000
+  &__wrapper
+    @extend .container
+  &__list
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    padding: 0 80px
+    background-image: url(../image/bg-small.jpg)
+    &:before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 8px
+      height: 278px
+      margin-left: -4px
+      margin-top: -139px
+      background-image: url(../image/info/info-border.png)
+      background-repeat: no-repeat
+  &__item 
+    width: 50%
+    margin: 55px 0
+    &:nth-child(even) 
+      padding-left: 80px
+  &__caption
+    margin: 0
+    font-size: 30px
+    text-transform: uppercase
+.news
+  &__list 
+    padding-right: 90px
+  &__item
+    margin-top: 34px
+  &__caps
+    display: block
+    text-transform: uppercase
+    font-size: 14px
+    font-weight: 700
+    line-height: 24px
+  &__date
+    display: block
+    margin-top: 6px
+    font-size: 14px
+    font-weight: 400
+  &__btn
+    margin-top: 29px
+.photo-gallery
+  &__list
+    margin-top: 40px
+    margin-bottom: 37px
+  &__item
+    & img
+      width: 100%
+      border: 7px solid #fff
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__btn
+    display: block
+    padding: 13px 0
+    width: 140px
+    text-align: center
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    text-decoration: none
+    color: #ffffff
+    background-color: #000000
+    &:hover 
+      background-color: #663d15
+.contacts
+  margin-top: 34px
+  color: #000000
+  &__wrapper
+    @extend .info__wrapper
+  &__list
+    @extend .info__list
+  &__item
+    width: 50%
+    margin: 55px 0;
+    &:nth-child(even)
+      padding-left: 80px;
+  &__caption
+    @extend .info__caption
+  &__content 
+    width: 288px
+    margin-top: 34px
+    & p 
+      margin: 0
+      font-size: 14px
+      line-height: 24px
+      font-weight: 700
+      text-transform: uppercase
+  &__btn 
+    margin-top: 30px
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+  &__wrap 
+    & input 
+      display: inline-block
+      width: 140px
+      padding: 12px 17px
+      text-transform: uppercase
+      border: 2px solid #000101
+      &::-webkit-input-placeholder 
+        color: #000000
+      &:nth-child(odd)
+        margin-right: 20px
+      &[type=text]
+        margin-top: 20px
+      &:focus
+        outline: none
+        border-color: #663d15
+      &.form__btn
+        width: calc(100% - 7px)
+        margin: 0
+        margin-top: 34px
+        padding: 14px 0 15px
+        background-color: #000000
+        color: #ffffff
+        border: none
+        &:hover
+          @extend .btn:hover
+.page-footer
+  margin-top: 64px
+  padding: 60px 0 40px
+  background-image: url(../image/bg-small-2.png)
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    @extend .container
+  &__wrap
+    display: flex
+  &__contacts
+    display: inline-block
+    margin-right: 93px
+    & p
+      margin: 0
+      font-size: 14px
+      line-height: 24px
+      font-weight: 400
+      text-transform: uppercase
+  &__social
+    text-align: center
+    display: inline-block
+    & p
+      margin-bottom: 20px
+      @extend .text-prop
+  &__item
+    position: relative
+    display: inline-block
+    width: 43px
+    height: 43px
+    margin-right: 2px
+    background-color: #000000
+    &:last-child 
+      margin-right: 0
+    &:hover
+      cursor: pointer 
+      background-color: #fff
+      &:first-child
+        &::before
+          background-image: url(../image/vk_black.png)
+      &:nth-child(2)
+        &::before
+          background-image: url(../image/fk_black.png)
+      &:last-child
+        &::before
+          background-image: url(../image/in_black.png)
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      background-repeat: no-repeat
+    &:first-child
+      &::before
+        width: 25px
+        height: 16px
+        margin-top: -8px
+        margin-left: -12.5px
+        background-image: url(../image/vk.png)
+    &:nth-child(2)
+      &::before
+        width: 12px
+        height: 22px
+        margin-top: -11px
+        margin-left: -6px
+        background-image: url(../image/fk.png)
+    &:last-child
+      &::before
+        width: 21px
+        height: 21px
+        margin-top: -10.5px
+        margin-left: -10.5px
+        background-image: url(../image/in.png)
+  &__developed
+    display: inline-block
+    & p
+      text-align: center
+      margin-bottom: 20px
+      @extend .text-prop
+    &-button
+      display: block
+      width: 140px
+      padding: 13px 0 12px;
+      text-align: center
+      text-decoration: none
+      font-weight: 400
+      &:hover 
+        background-color: #ffffff
+        color: #000000
+        font-weight: 700
